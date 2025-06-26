@@ -13,11 +13,12 @@ app.get("/frame", (req, res) => {
   res.json({
     version: "vNext",
     image: "https://i.imgur.com/Qr71crq.jpeg",
+    text: "Mint Eggman",
     buttons: [
       {
-        label: "Mint Eggman NFT",
+        label: "Mint",
         action: "post",
-        target: "eggman-minter.vercel.app/mint"
+        target: "https://eggman-minter.vercel.app/mint" //
       }
     ]
   });
