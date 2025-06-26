@@ -28,7 +28,7 @@ app.post("/mint", (req, res) => {
   res.json({
     version: "vNext",
     image: "https://i.imgur.com/EB8Y63k.jpeg",
-    text: "Mint complete!",
+    text: "Minted!"
   });
 });
 
