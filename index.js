@@ -17,7 +17,7 @@ app.get("/frame", (req, res) => {
       {
         label: "Mint Eggman NFT",
         action: "post",
-        target: "https://your-app-name.vercel.app/mint"
+        target: "eggman-minter.vercel.app/mint"
       }
     ]
   });
