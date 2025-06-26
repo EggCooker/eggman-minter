@@ -12,13 +12,13 @@ app.get("/", (req, res) => {
 app.get("/frame", (req, res) => {
   res.json({
     version: "vNext",
-    image: "https://i.imgur.com/Qr71crq.jpeg",
+    image: "https://placekitten.com/600/400",
     text: "Mint Eggman",
     buttons: [
       {
         label: "Mint",
         action: "post",
-        target: "https://eggman-minter.vercel.app/mint" //
+        target: "https://eggman-minter.vercel.app/mint"
       }
     ]
   });
@@ -27,7 +27,7 @@ app.get("/frame", (req, res) => {
 app.post("/mint", (req, res) => {
   res.json({
     version: "vNext",
-    image: "https://i.imgur.com/EB8Y63k.jpeg",
+    image: "https://placekitten.com/600/401",
     text: "Minted!"
   });
 });
