@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/frame", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   res.json({
     version: "vNext",
     image: "https://placekitten.com/600/400",
@@ -25,11 +26,16 @@ app.get("/frame", (req, res) => {
 });
 
 app.post("/mint", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   res.json({
     version: "vNext",
     image: "https://placekitten.com/600/401",
     text: "Minted!"
   });
+});
+
+app.listen(port, () => {
+  console.log(`✅ Mini App running at http://localhost:${port}/frame`);
 });
 
 app.listen(port, () => {
